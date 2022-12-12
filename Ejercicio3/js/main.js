@@ -1,21 +1,19 @@
 
-function palindromo(frase) {
-    frase ="ana";
-    let inicio = 0;
-    let palindrome = false;
-    let fin = frase.length;
-    while (inicio < fin && !palindrome) {
-        if (frase.charAt(inicio) == frase.charAt(fin) ) {
-            inicio++;
-            fin--;
-        }else{
-            palindrome = true;
-        }
+function invertirNombre(nombre) {
+    let invertida = "";
+
+    for (let index = nombre.length; index >= 0; index--) {
+        invertida+= nombre.charAt(index);
     }
-    if (!palindrome) {
-        `${frase} es un palindromo`;
-    }else{
-        `${frase} no es un palindromo`;
+    return invertida;
+}
+
+
+function esPalindromo(str) {
+    str = str.toLowerCase();
+    str = str.replaceAll(" ","");
+    if (invertirNombre(str)== str) {
+        return true;
     }
-   return palindrome;
+    return false;
 }

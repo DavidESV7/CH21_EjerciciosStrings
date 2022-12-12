@@ -1,4 +1,4 @@
-let nombre = "Laura Aline";
+
 
 function invertirNombre(nombre) {
     let invertida = "";
