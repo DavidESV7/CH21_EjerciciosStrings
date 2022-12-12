@@ -6,5 +6,5 @@ function invertirNombre(nombre) {
     for (let index = nombre.length; index >= 0; index--) {
         invertida+= nombre.charAt(index);
     }
-    return console.log(invertida);
+    return invertida;
 }
